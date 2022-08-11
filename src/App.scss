@@ -1,0 +1,79 @@
+@import "./Assets/Scss/normalize.scss";
+// @import "./Assets/Css/fonts.scss";
+@import "../src/Assets/Scss/Colors.scss"; 
+
+html{
+  box-sizing: border-box;
+  margin: 0;
+}
+
+
+*,
+::before,
+::after{
+  box-sizing: inherit;
+}
+
+ul, ol{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family:  'Barlov' ,  'sans-serif';
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: $main-bg-color;
+  overflow-x: hidden;
+  color: #222;
+
+}
+
+.img{
+  max-width: 100%;
+  height: auto;
+}
+
+.visual-hidden{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,88 @@
+@import "../../Assets/Scss/Colors.scss";
+
+.sidebar{
+  display: flex;
+  flex-direction: column; 
+  padding-left: 12px;
+  height: 100vh;
+  width: 105px;
+  border-radius: 0px 16px 16px 0px;
+  background-color: $main-dark;
+
+
+  &__list{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+  }
+
+    &__link{
+      margin-bottom: 22px;
+      display: inline-block;
+      padding: 12px;
+      padding-right: 25px; 
+      border-radius: 12px 0 0 12px;
+
+        &-item{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 56px;
+          height: 56px;
+          border-radius: 8px;
+        }
+
+        svg {
+          path{
+            fill: $main-orange;
+          }
+        }
+    }
+
+    &__link-active{
+      margin-bottom: 22px;
+      display: inline-block;
+      padding: 12px;
+      padding-right: 25px;
+      background-color: $main-bg-color;
+      border-radius: 12px 0 0 12px;
+
+        span { 
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 56px;
+          height: 56px;
+          background-color: $main-orange;
+          border-radius: 8px;
+
+          svg {
+            path{
+              fill: #fff;
+            }
+          }
+        }
+    }
+
+    &__btn{
+      margin-top: auto;
+      padding-left: 28px;
+      border: none; 
+      background: none;  
+    }
+
+}
+
+.logo{
+  display: inline-block;
+  padding: 24px;
+  padding-left: 12px;
+
+  :hover{
+    opacity: 0.8;
+  }
+
+  :active{
+    opacity: 0.6; 
+  }
+}
